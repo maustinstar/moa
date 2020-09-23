@@ -1,0 +1,11 @@
+---
+---
+
+// Override Sass Variables
+
+// Headers
+$header-bg-color: #db4c6e !default;
+$header-bg-color-secondary: #db4c6e !default;
+$section-headings-color: #db4c6e !default;
+
+@import "{{ site.theme }}";

@@ -1,22 +1,22 @@
  
 
-[https://www.kaggle.com/c/lish-moa/overview](https://www.kaggle.com/c/lish-moa/overview)
-
-- What are you trying to do? Articulate your objectives using absolutely no jargon. (Introduction)  
-
-- How is it done today, and what are the limits of current practice? (Introduction)  
-
-- What is new in your approach and why do you think it will be successful? (Methods)  
-
-- Who cares? If you are successful, what difference will it make? (Discussion)  
-
-- What are the risks? (Methods)  
-
-- How much will it cost? (Methods)  
-
-- How long will it take? (Methods)  
-
-- What are the mid-term and final “exams” to check for success? (Results)
+> [https://www.kaggle.com/c/lish-moa/overview](https://www.kaggle.com/c/lish-moa/overview)
+> 
+> - What are you trying to do? Articulate your objectives using absolutely no jargon. (Introduction)  
+> 
+> - How is it done today, and what are the limits of current practice? (Introduction)  
+> 
+> - What is new in your approach and why do you think it will be successful? (Methods)  
+> 
+> - Who cares? If you are successful, what difference will it make? (Discussion)  
+> 
+> - What are the risks? (Methods)  
+> 
+> - How much will it cost? (Methods)  
+> 
+> - How long will it take? (Methods)  
+> 
+> - What are the mid-term and final “exams” to check for success? (Results)
 
 ## Summary Figure 
 

@@ -1,6 +1,6 @@
  
 
-https://www.kaggle.com/c/lish-moa/overview 
+[https://www.kaggle.com/c/lish-moa/overview](https://www.kaggle.com/c/lish-moa/overview)
 
 - What are you trying to do? Articulate your objectives using absolutely no jargon. (Introduction)  
 

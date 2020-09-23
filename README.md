@@ -2,7 +2,7 @@
 
 Page url: https://maustinstar.github.io/moa/
 
-Page sources are found in `/docs`
+Page sources are found [in the `/docs` directory](https://github.com/maustinstar/moa/tree/master/docs)
 
 ### Markdown Cheat Sheet
 

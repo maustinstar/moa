@@ -33,7 +33,7 @@ This project will look to develop an algorithm that automatically labels each ca
 
 ## Expected Methods
 #### Prathic 
-
+<img src="https://bit.ly/3kMUv5K" align="center" border="0" alt="- \frac{1}{M} \sum_{m=1}^{M}\frac{1}{N}\sum_{i=1}^{N}[y_{i,m}log(\hat{y_{I,m}}) + (1-y_{i,m})log(1 - \hat{y_{I,m}}) ]" width="433" height="53" /> 
 Unsupervised learning – clustering mechanism based on specific mechanism (206 clusters) or more general subcategories (inhibitor, agonist, etc.) 
 
 Supervised learning - some sort of predictive classification  

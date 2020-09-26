@@ -1,6 +1,4 @@
 
-## Predicting Mechanism of Action Based on Drug Genomics
-
 ## Summary Figure 
 <a href="https://ibb.co/Xbzt8bq"><img src="https://i.ibb.co/Xbzt8bq/Screen-Shot-2020-09-24-at-5-32-40-PM.png" alt="Screen-Shot-2020-09-24-at-5-32-40-PM" align="center" border="0" width="433" height="215"/></a> 
 
@@ -24,7 +22,7 @@ To determine our accuracy in predicting the MoA of each sig_id, we will use the 
 <img src="https://bit.ly/3kMUv5K" align="center" border="0" alt="- \frac{1}{M} \sum_{m=1}^{M}\frac{1}{N}\sum_{i=1}^{N}[y_{i,m}log(\hat{y_{I,m}}) + (1-y_{i,m})log(1 - \hat{y_{I,m}}) ]" width="433" height="53" /> 
 * N is the number of sig_id observations in the test data (i=1,…,N) 
 * M is the number of scored MoA targets (m=1,…,M)
-* ŷ<sub> i, m</sub>  is the predicted probability of a positive MoA response for a sig_id 
+* ŷ<sub> i, m</sub>  is the predicted probability of a positive MoA response for a sig_id 
 * y<sub>i, m</sub> is the ground truth, 1 for a positive response, 0 otherwise 
 
 ## Results

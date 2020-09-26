@@ -19,12 +19,11 @@ Given various inputs such as gene expression and cell viability we hope to devel
 #### Unsupervised learning 
 We expect to either form clusters for each mechanism of action or we can generalize them further into classifications such as activator, inhibitor, channel blocker, etc. In terms of the specific algorithms, we plan on using K-Means and GMM. We also plan on trying PCA for dimension reduction.  
 #### Supervised learning
-For this part of the project we plan on using Naïve Bayes and an Artificial Neural Network. Some of the main reasons that led us to choosing these two is the high dimensionality of our data set and also our need for a probabilistic value for each classification. 
-To determine our accuracy in predicting the MoA of each sig_id, we will use the following log loss equation:
-<img src="https://bit.ly/3kMUv5K" align="center" border="0" alt="- \frac{1}{M} \sum_{m=1}^{M}\frac{1}{N}\sum_{i=1}^{N}[y_{i,m}log(\hat{y_{I,m}}) + (1-y_{i,m})log(1 - \hat{y_{I,m}}) ]" width="433" height="53" /> 
-* N is the number of sig_id observations in the test data (i=1,…,N) 
-* M is the number of scored MoA targets (m=1,…,M)
-* ŷ<sub> i, m</sub>  is the predicted probability of a positive MoA response for a sig_id 
+For this part of the project we plan on using Naïve Bayes and an Artificial Neural Network. Some of the main reasons that led us to choosing these two is the high dimensionality of our data set and also our need for a probabilistic value for each classification. To determine the performance of our model in predicting the MoA of each sig_id, we will use the following log loss equation:
+<img src="https://bit.ly/3kMUv5K" align="center" border="0" alt="- \frac{1}{M} \sum_{m=1}^{M}\frac{1}{N}\sum_{i=1}^{N}[y_{i,m}log(\hat{y_{I,m}}) + (1-y_{i,m})log(1 - \hat{y_{I,m}}) ]" width="433" height="53" />
+* N is the number of sig_id observations in the test data (i=1,...,N)
+* M is the number of scored MoA targets (m=1,...,M)
+* ŷ<sub> i, m</sub>  is the predicted probability of a positive MoA response for a sig_id
 * y<sub>i, m</sub> is the ground truth, 1 for a positive response, 0 otherwise 
 
 ## Results

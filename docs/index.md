@@ -2,7 +2,7 @@
 
 ## Summary Figure 
 
-<img src=https://github.com/maustinstar/moa/blob/master/docs/assets/Infographic.png />
+![Infographic](https://github.com/maustinstar/moa/blob/master/docs/assets/Infographic.png)
 
 ## Introduction/Background
 

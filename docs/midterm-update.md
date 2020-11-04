@@ -16,6 +16,8 @@ The dataset in this project combines gene expression and cell viability data. Th
 
 For our initial analysis, we discarded the dosage type and time because previous research studies indicate it should not significantly affect the MoAs present. Furthermore, the control vehicle is not needed because this data is already represented in the scored dataset on which our model will be trained. Finally, we normalized all gene expression values between 0 and 1.
 
+<img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/dataset.png" />
+
 ## The Goal
 
 Given various inputs, such as gene expression and cell viability, we hope to develop an algorithm that automatically labels each case in the test set as one or more MoA classes. Since drugs can have multiple MoA annotations, the task is a multi-label classification problem.

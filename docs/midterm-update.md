@@ -1,3 +1,5 @@
+# MoA Midterm Update
+
 ## Summary Figure
 
 <img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/infographic-2.png" />
@@ -30,7 +32,7 @@ The main challenge we face is high dimensionality required to capture 95% of the
 
 ### Next Steps
 
-In the future, we plan on adding supervised learning techniques in addition to the PCA methods to evaluate our data set. We are considering using a Naïve Bayes and an Artificial Neural Network to find a probabilistic value for each classification. We will identify the supervised learning performance using the logarithmic loss function. We also plan on submitting our work to Kaggle's open competition.
+In the future, we plan on adding supervised learning techniques in addition to the PCA methods to evaluate our data set. We are considering using a Naïve Bayes and an Artificial Neural Network to find a probabilistic value for each classification. We will identify the supervised learning performance using the logarithmic loss function. We also plan on submitting our work to [Kaggle's open competition](https://maustinstar.github.io/moa/kaggle).
 
 ## Discussion
 

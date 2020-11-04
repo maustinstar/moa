@@ -1,3 +1,6 @@
+## Summary Figure
+
+<img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/infographic-2.png" />
 
 ## Background
 
@@ -18,6 +21,8 @@ Given various inputs, such as gene expression and cell viability, we hope to dev
 ### Current Progress
 
 We used PCA for dimensionality reduction. We determined that 95% is an optimal cut-off threshold and analyzed the number of components required to achieve that threshold. As shown in the figure below, the number of components needed to achieve 95% variance capture is about 525.
+
+<img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/pca-threshold.png" />
 
 ### Challenges
 

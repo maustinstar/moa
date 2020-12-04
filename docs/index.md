@@ -18,30 +18,20 @@ For our initial analysis, we discarded the dosage type and time because previous
 
 This figure shows the distributions of the top activated mechanisms of actions in our training data. The rest of the pathways only represent 30% of the total mechanisms. Note that not every mechanism of action is activated at any point, thus leading to a class distribution not summed to 100%.
 
-<img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/dataset.png" />
-
 ## Methods
 
-#### The Goal
+### The Goal
 Given various inputs such as gene expression and cell viability we hope to develop an algorithm that automatically labels each case in the test set as one or more MoA classes. Since drugs can have multiple MoA annotations, the task is a multi-label classification problem. 
 
-#### Unsupervised learning 
-
-The 852 features in the dataset lead to a significant dimensionality, so we used PCA for dimensionality reduction. We determined that 95% is an optimal cut-off threshold and analyzed the number of components required to achieve that threshold. As shown in the figure below, the number of components needed to achieve 95% variance capture is about 525.
+### Unsupervised learning — PCA
 
 <img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/pca-threshold.png" />
 
-#### Challenges
+The 852 features in the dataset lead to a significant dimensionality, so we used PCA for dimensionality reduction. We determined that 95% is an optimal cut-off threshold and analyzed the number of components required to achieve that threshold. As shown in the figure above, the number of components needed to achieve 95% variance capture is about 525. After applying PCA, we have three different variations of the dataset to choose from: only using original data, only using PCA data, or using a combined dataset containing original and PCA data.
 
-The main challenge we face is high dimensionality required to capture 95% of the variance in our dataset. Moreover, there are three different datasets we can use for training the model: original, PCA, or original + PCA. Performing tests to determine which dataset performs the best is necessary. Moving forward, it will be important to determine the architecture of the supervised model we will be using to perform multi-class classification.
+### Supervised learning
 
-### Next Steps
-
-In the future, we plan on adding supervised learning techniques in addition to the PCA methods to evaluate our data set. We also plan on submitting our work to [Kaggle's open competition](https://maustinstar.github.io/moa/kaggle).
-
-#### Supervised learning
-
-### Log Loss Equation
+#### Log Loss Equation
 
 To determine the performance of our model in predicting the MoA of each sig_id, we will use the following log loss equation:
 <img src="https://bit.ly/3kMUv5K" align="center" border="0" alt="- \frac{1}{M} \sum_{m=1}^{M}\frac{1}{N}\sum_{i=1}^{N}[y_{i,m}log(\hat{y_{I,m}}) + (1-y_{i,m})log(1 - \hat{y_{I,m}}) ]" width="433" height="53" />
@@ -50,13 +40,13 @@ To determine the performance of our model in predicting the MoA of each sig_id, 
 * ŷ<sub> i, m</sub>  is the predicted probability of a positive MoA response for a sig_id
 * y<sub>i, m</sub> is the ground truth, 1 for a positive response, 0 otherwise
 
-### LG Boost
+#### LG Boost
 
 <img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/leaf.png" />
 
 Initially, we wanted to use Extreme Gradient Boost because our problem space is multiclassification. However, because of the large dimensionality in the dataset, this was not something we could use. We also tried to tune the parameters and use a GPU, however, it still couldn’t handle this large dataset and would cause errors not having enough available RAM. We realized that we could use a Light Gradient Boost instead. In terms of parameters, with the help of previous work, we were able to tune the early stopping round parameter, learning rate, max depth and most importantly the number of leaves, which controls the complexity of the model. These are some of the more import parameters for this algorithm. We expected this to give suboptimal results, but we wanted to have a benchmark for later comparisons. This diagram shows how this algorithm works, splitting the tree leaf-wise. We also use a k-fold with five splits for most optimal results.
 
-### Neural Network
+#### Neural Network
 
 <img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/nn.png" />
 

@@ -16,7 +16,7 @@ For our initial analysis, we discarded the dosage type and time because previous
 
 <img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/distribution.png" />
 
-This figure shows the distributions of the top activated mechanisms of actions in our training data. The rest of the pathways only represent 30% of the total mechanisms. Note that not every mechanism of action is activated at any point, thus leading to a class distribution not summed to 100%.
+This figure shows the distributions of the top activated mechanisms of actions in our training data. The rest of the pathways only represent 30% of the total mechanisms. Note that not every mechanism of action is activated at any point, thus leading to a class distribution not summed to 100%. Based off the data set and our given time constraint, we didn't manually identify any significant outliers. However, we plan on using our PCA algorithm with a parameter of 95% variance to not only reduce dimensionality but also remove the outliers from the dataset and thus ensure that they don't affect our results negatively.
 
 ## Methods
 
@@ -27,7 +27,7 @@ Given various inputs such as gene expression and cell viability we hope to devel
 
 <img src="https://raw.githubusercontent.com/maustinstar/moa/master/docs/assets/pca-threshold.png" />
 
-The 852 features in the dataset lead to a significant dimensionality, so we used PCA for dimensionality reduction. We determined that 95% is an optimal cut-off threshold and analyzed the number of components required to achieve that threshold. As shown in the figure above, the number of components needed to achieve 95% variance capture is about 525. After applying PCA, we have three different variations of the dataset to choose from: only using original data, only using PCA data, or using a combined dataset containing original and PCA data.
+The 852 features in the dataset lead to a significant dimensionality, so, as stated before, we used PCA for dimensionality reduction. We determined that 95% is an optimal cut-off threshold and analyzed the number of components required to achieve that threshold. As shown in the figure above, the number of components needed to achieve 95% variance capture is about 525. After applying PCA, we have three different variations of the dataset to choose from: only using original data, only using PCA data, or using a combined dataset containing original and PCA data.
 
 ### Supervised learning
 
